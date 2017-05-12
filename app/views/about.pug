@@ -1,0 +1,20 @@
+.about
+	.parallax
+		div(ng-parallax pattern="Strings.about.parallax.image" speed="10")
+			.overlay
+			.container
+				h2.text-center {{Strings.about.parallax.title}}
+	.text
+		.container
+			h2 {{Strings.about.text.title}}
+			span.line
+			p(ng-repeat="p in Strings.about.text.text")
+				| {{p.p}}
+	.items.container
+		.row
+			.col-xs-12.col-sm-4(ng-repeat="item in Strings.about.items track by $index")
+				span(ng-class="item.icon")
+				span.title 
+					| {{item.title}}
+				p
+					| {{item.subtitle}}

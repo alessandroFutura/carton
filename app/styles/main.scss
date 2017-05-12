@@ -1,0 +1,220 @@
+//$main-color: #E65100;
+//$main-color: #006C95;
+$main-color: #CB3437;
+$main-color-dark: darken($main-color,10%);
+$main-color-darker: darken($main-color,14%);
+
+$main-color-2: #006C95;
+$main-color-dark-2: darken($main-color-2,10%);
+$main-color-darker-2: darken($main-color-2,14%);
+
+$text-color: #FFFFFF;
+$text-color-dark: darken($text-color,50%);
+$text-color-darker: darken($text-color,68%);
+
+$brand-primary: $main-color;
+
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/compass-sass-mixins/lib/compass";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body
+{
+	font-family: Lato, sans-serif;
+	color: $text-color-dark;
+	overflow-x: hidden;
+}
+
+h2
+{
+	font-family: Montserrat, sans-serif;
+	font-weight: 600;
+}
+
+p
+{
+	font-size: 1em;
+}
+
+.navbar-default
+{
+	margin: 0;
+
+	a.navbar-brand
+	{
+		img
+		{
+			max-height: 40px;
+			position: fixed;
+			left: 12px;
+			top: 4px;
+		}
+	}	
+
+	ul.navbar-nav a
+	{
+		color: $main-color !important;
+	}
+
+	ul.navbar-nav
+	{
+		li
+		{
+			&.active a, a:hover
+			{
+				background-color: $main-color !important;
+				color: $text-color !important;
+			}
+
+			.glyphicon, .fa
+			{
+				margin-right: 8px;
+			}
+		}
+	}
+}
+
+.about, .services, .contact
+{
+	.parallax
+	{
+		height: 200px;
+		overflow: hidden;
+
+		div
+		{
+			background-size: cover !important;
+
+			h2, .overlay
+			{
+				position: absolute;
+			}
+
+			h2
+			{
+				padding: 0;
+				color: $text-color;
+				top: 32%;
+				font-size: 3em;
+			}
+
+			.overlay
+			{
+				background-color: rgba($text-color-darker,.4);
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+#back-top
+{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background-color: $main-color;
+	box-shadow: 0px 2px 10px rgba($text-color-darker,.6);
+	padding: 10px 12px;
+	display: none;
+	border-radius: 50%;
+	transition: background-color .3s ease;
+	cursor: pointer;
+
+	&:hover
+	{
+		background-color: $main-color-darker;
+	}
+
+	span
+	{
+		color: $text-color;
+		font-size: 1em;		
+	}
+}
+
+footer
+{
+	padding: 40px 20px;
+	background-color: $main-color;
+	color: $text-color;
+	text-align: center;
+
+	.logo
+	{
+		margin: 0 0 20px;
+
+		img
+		{
+			max-height: 68px;
+		}
+	}
+
+	.midia
+	{
+		padding: 0 0 10px;
+	}
+
+	.midia, .credits
+	{
+		a
+		{
+			color: $text-color;
+			font-size: 1.3em;
+			transition: .3s all ease;
+			padding:0 8px;
+
+			&:hover
+			{
+				color: $main-color-darker;
+				text-decoration: none !important;
+			}
+		}
+	}
+
+	.credits a
+	{
+		font-size: 1em;
+	}
+
+}
+
+@media (min-width: $screen-sm)
+{
+	body
+	{
+		padding-top: 100px;
+	}
+
+	.navbar-default
+	{
+
+		border-radius: 0px;
+		border: none;
+		box-shadow: 0px 2px 10px rgba($main-color-darker,.3);
+		font-size: 1em;
+
+		a.navbar-brand
+		{
+			img
+			{
+				max-height: 68px;
+				position: relative;
+				left: 0;
+				top: 0;
+			}
+		}
+
+		ul.navbar-nav a
+		{
+			padding: 60px 20px 20px;
+		}
+	}
+}
+
+@import "home";
+@import "about";
+@import "services";
+@import "contact";

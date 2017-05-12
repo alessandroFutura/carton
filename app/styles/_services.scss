@@ -1,0 +1,91 @@
+.services
+{
+	.item
+	{
+		margin: 60px 0 40px;
+		padding-bottom: 40px;
+		background-size: cover;
+		color: $text-color-darker;
+	    position: relative;
+	    border-bottom: 1px solid rgba($text-color-darker,0.3);
+
+	    > img
+	    {
+	    	max-width: 100%;
+	    	margin-bottom: 18px;
+	    	box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px 1px;
+	    }
+
+	    &:last-child
+	    {
+	    	border-bottom: none;
+	    }
+
+		.image
+		{
+			width: 100%;
+			background-size: cover !important;
+			margin-left: -15px;
+			box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px 1px;
+		}
+
+		span
+		{
+			display: block;
+			font-size: 2em;
+			font-weight: 800;
+			margin-bottom: 18px;
+		}
+
+		p
+		{
+			font-size: 1.4em;
+			line-height: 30px;
+		}
+	}
+
+	.contacts
+	{
+		text-align: center;
+		background-color: $main-color-2;
+		//background-color: $text-color-darker;
+		color: $text-color;
+		padding: 30px 0;
+
+		h2
+		{
+			font-size:2em;
+		}
+
+		span.line
+		{
+			width: 20%;
+			display: block;
+			margin: 0 auto 10px;
+			border-top: 2px solid $main-color-darker-2;
+			//border-top: 2px solid $main-color;
+		}
+
+		.contact
+		{
+			span
+			{
+				margin-right: 8px;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm)
+{
+	.services
+	{
+		.item
+		{
+			> img
+			{
+				display: none;
+			}
+		}
+	}
+}

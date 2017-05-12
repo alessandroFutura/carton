@@ -1,0 +1,319 @@
+.home
+{
+	font-size: 1em;
+
+	.item
+	{
+		.item-image
+		{
+			background-size: cover;
+			width: 100%;
+		}
+
+		.carousel-caption
+		{
+			font-family: Montserrat, sans-serif;
+			top: 40%;
+
+			span
+			{
+				display: block;
+
+				&.line
+				{
+					width: 40%;
+					//border-top: 2px solid $text-color;
+					border-top: 2px solid $main-color-2;
+					margin: 0 auto;
+				}
+				
+				&.title
+				{
+					font-size: 3em;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 46px;
+					padding: 20px 0;
+				}
+			
+				&.subtitle
+				{
+					display: none;
+				}
+			}
+		}
+
+		.overlay
+		{
+			width: 100%;
+			height: 100%;
+			background-color: rgba($main-color,0.3);
+			top: 0;
+			position: absolute;
+		}
+	}
+
+	#see-more
+	{
+		position: fixed;
+		right: 20px;
+		bottom: 20px;	
+
+		span
+		{
+			color: $text-color;
+		}
+
+		div
+		{
+			width: 20px;
+			height: 20px;
+			margin-left: 18px;		
+			border-right: 2px solid $text-color;
+			border-bottom: 2px solid $text-color;
+			-ms-transform: rotate(45deg);
+    		-webkit-transform: rotate(45deg);
+    		transform: rotate(45deg);
+		}
+	}
+
+	.about
+	{
+		text-align: center;
+		padding: 40px 0;
+
+		span.line
+		{
+			width: 20%;
+			display: block;
+			margin: 0 auto 10px;
+			border-top: 2px solid $main-color;
+		}
+
+		> p
+		{
+			font-size: 1em;			
+			padding: 20px 0 40px;
+		}
+
+		.row
+		{
+			span
+			{
+				&.glyphicon, &.fa
+				{
+					font-size: 5em;
+					color: $main-color;
+				}
+
+				&.title
+				{
+					font-size: 1.5em;
+					font-family: Montserrat, sans-serif;
+					display: block;
+					color: $main-color-darker;
+				}
+			}
+			
+			p
+			{
+				padding: 10px;
+			}
+		}
+	}
+
+	.parallax
+	{
+		height: 360px;
+		overflow: hidden;
+
+		div
+		{
+			background-size: cover !important;
+			text-align: center;
+
+			&.overlay, &.info
+			{
+				position: absolute;
+				width: 100%;
+			}
+
+			.overlay
+			{
+				background-color: rgba($text-color-darker,.4);
+				height: 100%;
+			}
+
+			.info
+			{
+				top: 20%;
+				padding: 20px;
+			}
+
+			span
+			{
+				display: block;
+				color: $text-color;
+				text-shadow: 1px 1px 1px $text-color-dark;
+
+				&.title
+				{
+					color: $text-color;
+					font-size: 2em;
+					font-weight: 800;
+				}
+
+				&.subtitle
+				{
+					font-size: 1.2em;
+					font-weight: 600;
+				}
+
+				&.line
+				{
+					width: 14%;
+					margin: 10px auto 0;
+					border-top: 1px solid $text-color;
+				}
+
+				&.line-bg
+				{
+					width: 10%;
+					margin: 0 auto 20px;
+					border-top: 1px solid $main-color;
+				}
+
+				&.glyphicon, &.fa
+				{
+					font-size: 3em;
+					font-weight: 600;
+				}
+			}
+
+			a
+			{
+				font-size: 1.2em;
+				font-family: Montserrat, sans-serif;
+
+				&.btn-default
+				{
+					color: $text-color;
+					border-color: $main-color-darker;
+					background-color: $main-color;
+				}
+
+				&:hover
+				{
+					border-color: $main-color;
+					background-color: $main-color-dark;
+				}
+			}
+		}
+	}
+
+	.map
+	{
+		position: relative;
+
+		h2
+		{
+			padding: 20px 0 0;
+			text-align: center;
+		}
+
+		.line
+		{
+			width: 20%;
+			display: block;
+			margin: 0 auto 10px;
+			border-top: 2px solid $main-color;
+		}
+
+		.arrow-down
+		{
+			width: 0;
+			height: 0;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-top: 20px solid $text-color;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 74px;
+			z-index: 100;
+			margin: auto;
+		}
+
+		.contact
+		{
+			padding: 4px 0;
+
+			span
+			{
+				margin-right: 2px;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm)
+{
+	.home
+	{	
+		.item
+		{		
+			
+			.carousel-caption
+			{
+				top: 40%;
+
+				span
+				{
+					&.subtitle
+					{
+						display: block;
+						font-size: 1.6em;
+						text-shadow: 1px 1px 1px $text-color-darker;
+						font-weight: 800;
+					}
+				}
+			}
+		}
+
+		.about
+		{
+			> p
+			{
+				font-size: 1.4em;
+			}
+		}
+
+		.parallax
+		{
+			div
+			{
+				span
+				{
+					&.title
+					{
+						font-size: 2.5em;
+					}
+
+					&.subtitle
+					{
+						font-size: 1.4em;
+					}
+				}
+			}
+		}
+
+		.map
+		{
+			.arrow-down
+			{
+				top: 75px;
+			}
+		}
+
+	}
+}

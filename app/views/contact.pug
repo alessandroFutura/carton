@@ -1,0 +1,53 @@
+.contact
+
+	.parallax
+		div(ng-parallax pattern="Strings.contact.parallax.image" speed="10")
+			.overlay
+			.container
+				h2.text-center {{Strings.contact.parallax.title}}
+
+	.map
+		
+		form(method="POST")
+			h2 Deixe sua mensagem
+			.form-group(ng-repeat="field in Strings.contact.form.fields track by $index")
+				label(for="field{{$index+1}}") {{field.title}}
+				input.form-control(id="field{{$index+1}}" name="{{field.name}}" ng-required="{{field.required}}" type="{{field.type}}" placeholder="{{field.title}}")
+			.form-group
+				label(for="{{Strings.contact.fields.teatarea.id}}") {{Strings.contact.form.textarea.title}}
+				textarea.form-control(id="{{Strings.contact.form.textarea.id}}" required="true" name="{{Strings.contact.form.textarea.name}}" rows="6" placeholder="{{Strings.contact.form.textarea.title}}")
+				button#submit.btn.btn-primary.btn-block(type="submit")
+					span(class="{{Strings.contact.form.button.icon}}")
+					| {{Strings.contact.form.button.title}}
+
+		ng-map#ngmap2(scrollwheel="false" map-type-control="false" default-style="false" center="[{{Strings.contact.map.latitude}}, {{Strings.contact.map.longitude}}]")
+			marker#marker2(position="{{Strings.contact.mark.latitude}}, {{Strings.contact.mark.longitude}}" on-click="map.showInfoWindow(event,'foo2')")
+			info-window#foo2
+				div(ng-non-bindable="")
+					h5 {{Strings.global.title}}
+					| {{Strings.contact.address.public_place}}, {{Strings.contact.address.number}}
+					br
+					| {{Strings.contact.address.district}} - {{Strings.contact.address.city}} - {{Strings.contact.address.uf}}
+					br
+					| {{Strings.contact.address.zip_code}}
+					br
+					.contact(ng-repeat="contact in Strings.contact.contacts track by $index")
+						span(ng-class="contact.icon")
+						| {{contact.value}}
+
+		.address.xs
+			h2 Entre em contato conosco
+			span.line
+			| {{Strings.contact.address.public_place}}, {{Strings.contact.address.number}}
+			br
+			| {{Strings.contact.address.district}} - {{Strings.contact.address.city}} - {{Strings.contact.address.uf}}
+			br
+			| {{Strings.contact.address.zip_code}}
+			br
+			br
+			.contact(ng-repeat="contact in Strings.contact.contacts track by $index")
+				span(ng-class="contact.icon")
+				| {{contact.value}}
+
+		.alert.alert-success(role="alert")
+			| ajhsajshasjhas

@@ -1,0 +1,74 @@
+.home
+	#carousel-home.carousel.slide(data-ride="carousel")
+
+		ol.carousel-indicators
+			li(ng-repeat="slide in Strings.home.slide track by $index" ng-class="{'active':$index==0}" data-target="#carousel-home" data-slide-to="{{$index}}")
+		
+		.carousel-inner(role="listbox")
+			
+			.item(ng-repeat="slide in Strings.home.slide track by $index" ng-class="{'active':$index==0}")
+				.item-image(ng-style="{'height':'{{itemImageHeight}}px','background-image':'url({{slide.image}})'}")
+				.carousel-caption
+					span.line
+					span.title
+						| {{slide.title}}
+					span.subtitle
+						| {{slide.subtitle}}
+				.overlay
+		
+		a.left.carousel-control(data-target="#carousel-home" role="button" data-slide="prev")
+			span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+			span.sr-only
+		a.right.carousel-control(data-target="#carousel-home" role="button" data-slide="next")
+			span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+			span.sr-only
+
+	#see-more
+		span Ver mais
+		div
+
+	.about.container
+		h2 {{Strings.home.about.title}}
+		span.line
+		p
+			| {{Strings.home.about.subtitle}}
+		.row
+			.col-xs-12.col-sm-4(ng-repeat="item in Strings.about.items track by $index")
+				span(ng-class="item.icon")
+				span.title 
+					| {{item.title}}
+				p
+					| {{item.subtitle}}
+
+	.parallax
+		div(ng-parallax pattern="Strings.home.parallax.image" speed="10")
+			.overlay
+			.info
+				span.title
+					| {{Strings.home.parallax.title}}
+				span.subtitle
+					|  {{Strings.home.parallax.subtitle}}
+				span.line
+				span.line-bg
+				a.btn.btn-default(href="{{Strings.home.parallax.link.url}}" target="{{Strings.home.parallax.link.target}}" type="button")
+					| {{Strings.home.parallax.link.title}}
+
+	.map
+		h2
+			| {{Strings.contact.map.title}}
+		span.line
+		.arrow-down
+		ng-map#ngmap1(scrollwheel="false" default-style="true" center="[{{Strings.contact.map.latitude}}, {{Strings.contact.map.longitude}}]")
+			marker#marker1(position="{{Strings.contact.mark.latitude}}, {{Strings.contact.mark.longitude}}" on-click="map.showInfoWindow(event, 'foo1')")
+			info-window#foo1
+				div(ng-non-bindable="")
+					h5 {{Strings.global.title}}
+					| {{Strings.contact.address.public_place}}, {{Strings.contact.address.number}}
+					br
+					| {{Strings.contact.address.district}} - {{Strings.contact.address.city}} - {{Strings.contact.address.uf}}
+					br
+					| {{Strings.contact.address.zip_code}}
+					br
+					.contact(ng-repeat="contact in Strings.contact.contacts track by $index")
+						span(ng-class="contact.icon")
+						| {{contact.value}}

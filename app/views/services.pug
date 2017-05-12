@@ -1,0 +1,23 @@
+.services
+
+	.parallax
+		div(ng-parallax pattern="Strings.services.parallax.image" speed="10")
+			.overlay
+			.container
+				h2.text-center {{Strings.services.parallax.title}}
+
+	.container
+		.item.row(ng-repeat="item in Strings.services.items track by $index")
+			img(src="{{item.image}}")
+			.col-xs-12.col-sm-6.hidden-xs(ng-class="{'pull-right':$index%2==0}")
+				.image(ng-style="{'background-image':'url({{item.image}})'}")
+			.col-xs-12.col-sm-6
+				span {{item.title}}
+				p {{item.description}}
+
+	.contacts
+		h2 {{Strings.services.contact_title}}
+		span.line
+		.contact(ng-repeat="contact in Strings.contact.contacts track by $index")
+			span(ng-class="contact.icon")
+			| {{contact.value}}

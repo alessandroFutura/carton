@@ -1,0 +1,84 @@
+.about
+{
+	.text
+	{
+		background-color: #f5f5f5;
+		padding: 40px 0 20px;
+		text-align: center;
+
+		h2
+		{
+			color: $main-color;
+		}
+
+		.line
+		{
+			width: 10%;
+			border-top: 3px solid $main-color;
+			margin: 0px auto 30px;
+		}
+
+		p
+		{
+			font-size: 1.4em;
+			margin-bottom: 30px;
+			line-height: 30px;
+		}
+
+		.image
+		{
+			width: 100%;
+			background-size: cover !important;
+		}
+
+		span
+		{
+			display: block;
+			font-size: 2em;
+			font-weight: 800;
+			margin-bottom: 18px;
+		}
+	}
+
+	.items
+	{
+		text-align: center;
+		padding: 40px 0;
+
+		span
+		{
+			&.glyphicon, &.fa
+			{
+				font-size: 5em;
+				color: $main-color;
+			}
+
+			&.title
+			{
+				font-size: 1.5em;
+				font-family: Montserrat, sans-serif;
+				display: block;
+				color: $main-color-darker;
+			}
+		}
+		
+		p
+		{
+			padding: 10px;
+		}
+	}
+}
+
+@media (min-width: $screen-sm)
+{
+	.about
+	{
+		.text
+		{
+			> img
+			{
+				display: none;
+			}
+		}
+	}
+}
