@@ -1,0 +1,247 @@
+{
+	"global": {
+		"model": "beta",
+		"title": "Carton Drywall",
+		"subtitle": "Só mais um Site Express",
+		"header":{
+			"logo": "Sua Logo",
+			"slogan": "Seu slogan aqui",
+			"menu":[
+				{
+					"icon": "glyphicon glyphicon-home",
+					"title": "Home",
+					"url": "",
+					"name": "home"
+				},
+				{
+					"icon": "fa fa-user-circle",
+					"title": "A Carton",
+					"url": "a-carton",
+					"name": "about"
+				},
+				{
+					"icon": "glyphicon glyphicon-tags",
+					"title": "Produtos",
+					"url": "produtos",
+					"name": "services"
+				},
+				{
+					"icon": "glyphicon glyphicon-envelope",
+					"title": "Contato",
+					"url": "contato",
+					"name": "contact"
+				}
+			]
+		},
+		"midias":[
+			{
+				"name": "Facebook",
+				"icon": "fa fa-facebook",
+				"target": "_self",
+				"url": "#"
+			},
+			{
+				"name": "Twitter",
+				"icon": "fa fa-twitter",
+				"target": "_self",
+				"url": "#"
+			},
+			{
+				"name": "Google",
+				"icon": "fa fa-google",
+				"target": "_self",
+				"url": "#"
+			},
+			{
+				"name": "Instagram",
+				"icon": "fa fa-instagram",
+				"target": "_self",
+				"url": "#"
+			}
+		],
+		"footer": {
+			"name": "&copy; Carton Drywall",
+			"credits": " Futura Agência"
+		}
+	},
+	"home": {
+		"slide": [
+			{
+				"image": "images/slide/01.jpg",
+				"title": "Nosso Show Room",
+				"subtitle": "Nulla ut porttitor urna. Morbi convallis accumsan porta. Cras eleifend massa nisl, sed sodales augue gravida eu."
+			},
+			{
+				"image": "images/slide/02.jpg",
+				"title": "A Construção Seca",
+				"subtitle": "Nulla ut porttitor urna. Morbi convallis accumsan porta. Cras eleifend massa nisl, sed sodales augue gravida eu."
+			},
+			{
+				"image": "images/slide/03.jpg",
+				"title": "Modernidade",
+				"subtitle": "Nulla ut porttitor urna. Morbi convallis accumsan porta. Cras eleifend massa nisl, sed sodales augue gravida eu."
+			},
+			{
+				"image": "images/slide/04.jpg",
+				"title": "Produtos",
+				"subtitle": "Nulla ut porttitor urna. Morbi convallis accumsan porta. Cras eleifend massa nisl, sed sodales augue gravida eu."
+			}
+		],
+		"about": {
+			"title": "A Carton Drywall",
+			"subtitle": "Com a intenção de trazer para o mercado um novo conceito, as construções secas. Grandes coisas feitas em tempo recorde e com o custo baixo. Oferecemos uma diversa linha de chapas e acessórios para DryWall, ferramentas além da tradicional linha de Gesso em placas, massas, fitas e afins."
+		},
+		"parallax":{
+			"title": "A Carton Drywall",
+			"subtitle": "Com a intenção de trazer para o mercado um novo conceito, as construções secas. Grandes coisas feitas em tempo recorde e com o custo baixo. Oferecemos uma diversa linha de chapas e acessórios para DryWall, ferramentas além da tradicional linha de Gesso em placas, massas, fitas e afins.",
+			"image": "images/home.jpg",
+			"link": {
+				"title": "Ver mais",
+				"target": "_self",
+				"url": "#/a-carton"
+			}
+		}
+	},
+	"about":{
+		"parallax":{
+			"title": "Quem Somos",
+			"image": "images/about.jpg"
+		},
+		"text": {
+			"image": "images/about_text.jpg",
+			"title": "A Carton",
+			"text": [
+				{ "p": "Em 2017 Nasce a Carton Drywall, uma loja do Grupo Dafel, um grupo de Lojas espalhadas pela região serrana, interior e região litorânea do estado do Rio de Janeiro. Sua proposta é trazer a regiões, condições de compra de materiais para construção seca, gesso e drywall com condições semelhantes a capital e grandes distribuidores." },
+				{ "p": "Mantendo em seu DNA a seriedade do grupo estamos abrindo o caminho no mercado e conquistando diversos clientes, não só profissionais da área , mas também algumas obras de médio porte e construtoras." },
+				{ "p": "Com o imediatismo do mundo atual e uma busca por recursos com menos investimentos, a contrução seca gera um ótimo custo benefício, por isso se torna uma tendência.São inúmeros os atributos desta tecnologia deste modelo de construção, que não usa água na obra. Dentro de casa, praticamente tudo pode ser criado com drywall." }
+			]
+		},
+		"items": [
+			{
+				"icon": "fa fa-desktop",
+				"title": "Porttitor ligula",
+				"subtitle": "Cras nec porttitor ligula. Ut ornare purus felis, nec gravida nunc bibendum sed. Maecenas et velit."
+			},
+			{
+				"icon": "fa fa-commenting-o",
+				"title": "Aenean ultrices",
+				"subtitle": "Ullamcorper quis. Aenean ultrices magna sit amet blandit euismod. Integer ut elit."
+			},
+			{
+				"icon": "fa fa-envelope-o",
+				"title": "Nulla et urna elit",
+				"subtitle": "Varius. Nulla et urna elit. Orci varius natoque penatibus et magnis dis parturient montes."
+			}
+		]
+	},
+	"services":{
+		"parallax":{
+			"title": "Serviços",
+			"image": "images/services.jpg"
+		},
+		"items":[
+			{
+				"image": "images/services/fusce-pellentesque.jpg",
+				"title": "Fusce pellentesque",
+				"description": "Ligula nec faucibus porttitor. Nam eget enim eu ex scelerisque luctus eu non diam. Ut tempor nisl ac tincidunt ultrices. Vivamus a vestibulum ex, ullamcorper condimentum erat. Mauris enim dui, suscipit sed augue in, fringilla mattis ex. Nulla quis dictum urna, sit amet tempus justo. Proin et dictum enim. Vivamus interdum augue a purus accumsan consectetur."
+			},
+			{
+				"image": "images/services/suspendisse.jpg",
+				"title": "Suspendisse",
+				"description": "Suspendisse volutpat nibh ut mi lobortis vestibulum. Donec mollis lorem ut velit congue efficitur. Suspendisse sagittis dui vitae semper iaculis. Sed imperdiet placerat arcu, a varius mi fringilla at."
+			},
+			{
+				"image": "images/services/fusce-pellentesque.jpg",
+				"title": "Fusce pellentesque",
+				"description": "Ligula nec faucibus porttitor. Nam eget enim eu ex scelerisque luctus eu non diam. Ut tempor nisl ac tincidunt ultrices. Vivamus a vestibulum ex, ullamcorper condimentum erat. Mauris enim dui, suscipit sed augue in, fringilla mattis ex. Nulla quis dictum urna, sit amet tempus justo. Proin et dictum enim. Vivamus interdum augue a purus accumsan consectetur."
+			},
+			{
+				"image": "images/services/suspendisse.jpg",
+				"title": "Suspendisse",
+				"description": "Suspendisse volutpat nibh ut mi lobortis vestibulum. Donec mollis lorem ut velit congue efficitur. Suspendisse sagittis dui vitae semper iaculis. Sed imperdiet placerat arcu, a varius mi fringilla at."
+			}
+		],
+		"contact_title": "Entre em contato"
+	},
+	"contact": {
+		"parallax":{
+			"title": "Fale Conosco",
+			"image": "images/contact.jpg"
+		},
+		"form_mail": [
+			{
+				"name": "Alessandro Menezes",
+				"mail": "railander_007@hotmail.com"
+			}
+		],
+		"address": {
+			"public_place": "Nome da Sua Rua",
+			"number": "999",
+			"complement": "Complemento",
+			"zip_code": "CEP: 00000-000",
+			"district": "Bairro",
+			"city": "Cidade",
+			"uf": "RJ"
+		},
+		"contacts": [
+			{
+				"icon": "glyphicon glyphicon-phone-alt",
+				"value": "(99)999-9999"
+			},
+			{
+				"icon": "glyphicon glyphicon-phone",
+				"value": "(99)9999-9999"
+			},
+			{
+				"icon": "glyphicon glyphicon-envelope",
+				"value": "seu@email.com.br"
+			}
+		],
+		"map":{
+			"title": "Como nos encontrar?",
+			"latitude": "-22.3877934",
+			"longitude": "-42.9543872",
+			"zoom": "14",
+			"key": "AIzaSyDeaigQxZcIjkD9xqC-A0Q1_9Y8mu6MYhE"
+		},
+		"mark":{
+			"latitude": "-22.3877934",
+			"longitude": "-42.9543872"
+		},
+		"form": {
+			"fields": [
+				{
+					"title": "Nome",
+					"id": "name",
+					"name": "name",
+					"required": "true"
+				},
+				{
+					"title": "Telefone",
+					"id": "tel",
+					"name": "tel",
+					"required": "false"
+				},
+				{
+					"title": "Email",
+					"id": "mail",
+					"name": "mail",
+					"required": "true"
+				}
+			],
+			"textarea": {
+				"title": "Mensagem",
+				"name": "message",
+				"id": "message"
+			},
+			"button": {
+				"icon": "glyphicon glyphicon-envelope",
+				"title": "Enviar Mensagem"
+			},
+			"message": {
+				"success": ":) Mensagem enviada com sucesso!",
+				"error": ":( Erro ao enviar a mensagem."
+			}
+		}
+	}
+}
