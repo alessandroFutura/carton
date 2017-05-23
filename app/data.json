@@ -69,22 +69,22 @@
 			{
 				"image": "images/slide/01.jpg",
 				"title": "Nosso Show Room",
-				"subtitle": "Nulla ut porttitor urna. Morbi convallis accumsan porta. Cras eleifend massa nisl, sed sodales augue gravida eu."
+				"subtitle": "Venha Conhecer o Nosso ShowRoom"
 			},
 			{
 				"image": "images/slide/02.jpg",
 				"title": "A Construção Seca",
-				"subtitle": "Nulla ut porttitor urna. Morbi convallis accumsan porta. Cras eleifend massa nisl, sed sodales augue gravida eu."
+				"subtitle": "Temos a solução para uma construção mais rápida e prática"
 			},
 			{
 				"image": "images/slide/03.jpg",
 				"title": "Modernidade",
-				"subtitle": "Nulla ut porttitor urna. Morbi convallis accumsan porta. Cras eleifend massa nisl, sed sodales augue gravida eu."
+				"subtitle": "O acabamento e os detalhes, fazem toda a diferença"
 			},
 			{
 				"image": "images/slide/04.jpg",
 				"title": "Produtos",
-				"subtitle": "Nulla ut porttitor urna. Morbi convallis accumsan porta. Cras eleifend massa nisl, sed sodales augue gravida eu."
+				"subtitle": "Temos uma diversidade de produtos desde a matéria prima até as ferramentas de aplicação"
 			}
 		],
 		"about": {
@@ -118,47 +118,52 @@
 		},
 		"items": [
 			{
-				"icon": "fa fa-desktop",
-				"title": "Porttitor ligula",
-				"subtitle": "Cras nec porttitor ligula. Ut ornare purus felis, nec gravida nunc bibendum sed. Maecenas et velit."
+				"icon": "fa fa-thumbs-o-up",
+				"title": "Acabamento perfeito",
+				"subtitle": "Paredes e forros de gesso acartonado possuem um acabamento perfeito, com uma superfície lisa e sem emendas."
 			},
 			{
-				"icon": "fa fa-commenting-o",
-				"title": "Aenean ultrices",
-				"subtitle": "Ullamcorper quis. Aenean ultrices magna sit amet blandit euismod. Integer ut elit."
+				"icon": "fa fa-flash",
+				"title": "Rapidez",
+				"subtitle": "Uma das maiores vantagens em relação à alvenaria ou gesso, é uma obra muito mais rápida, graças à facilidade da aplicação do drywall."
 			},
 			{
-				"icon": "fa fa-envelope-o",
-				"title": "Nulla et urna elit",
-				"subtitle": "Varius. Nulla et urna elit. Orci varius natoque penatibus et magnis dis parturient montes."
+				"icon": "fa fa-gears",
+				"title": "Versatilidade",
+				"subtitle": "Pode ser cortado em formas curvas, aceita vários revestimentos e ainda pode ser usado para criação de móveis acoplados à parede."
 			}
 		]
 	},
 	"services":{
 		"parallax":{
-			"title": "Serviços",
+			"title": "Produtos",
 			"image": "images/services.jpg"
 		},
 		"items":[
 			{
-				"image": "images/services/fusce-pellentesque.jpg",
-				"title": "Fusce pellentesque",
-				"description": "Ligula nec faucibus porttitor. Nam eget enim eu ex scelerisque luctus eu non diam. Ut tempor nisl ac tincidunt ultrices. Vivamus a vestibulum ex, ullamcorper condimentum erat. Mauris enim dui, suscipit sed augue in, fringilla mattis ex. Nulla quis dictum urna, sit amet tempus justo. Proin et dictum enim. Vivamus interdum augue a purus accumsan consectetur."
+				"image": "images/services/gesso-acartonado.jpg",
+				"title": "Gesso Acartonado (DryWall)",
+				"description": "O drywall (gesso acartonado) é uma placa formada por gesso e papel cartão. Essas placas podem ser de várias medidas: espessuras que vão de 10mm à 18mm, placas de 120cm de largura e 300cm de comprimento – elas podem ter medidas especiais dependendo do projeto, e variam de acordo com o fornecedor. O que sustenta essas placas são os perfis estruturais, que podem ser de madeira ou aço galvanizado."
 			},
 			{
-				"image": "images/services/suspendisse.jpg",
-				"title": "Suspendisse",
-				"description": "Suspendisse volutpat nibh ut mi lobortis vestibulum. Donec mollis lorem ut velit congue efficitur. Suspendisse sagittis dui vitae semper iaculis. Sed imperdiet placerat arcu, a varius mi fringilla at."
+				"image": "images/services/perfis.jpg",
+				"title": "Perfis (Drywall)",
+				"description": "Os perfis estruturais são como a base da parede ou teto a ser montado. Portanto, o primeiro passo para começar qualquer projeto com gesso acartonado, é posicioná-los e fixa-los nos locais adequados. O perfil estrutural que segura uma drywall consta de duas partes: guia e montante. A guia (de piso, parede ou teto) deve ser instalada com espaçamento de 60cm entre os parafusos. Os montantes devem ser posicionados dentro das guias, com uma distância de 40cm a 60cm entre si. A paginação dos montantes é que determina a instalação das placas, portanto tenha um cuidado especial!"
 			},
 			{
-				"image": "images/services/fusce-pellentesque.jpg",
-				"title": "Fusce pellentesque",
-				"description": "Ligula nec faucibus porttitor. Nam eget enim eu ex scelerisque luctus eu non diam. Ut tempor nisl ac tincidunt ultrices. Vivamus a vestibulum ex, ullamcorper condimentum erat. Mauris enim dui, suscipit sed augue in, fringilla mattis ex. Nulla quis dictum urna, sit amet tempus justo. Proin et dictum enim. Vivamus interdum augue a purus accumsan consectetur."
+				"image": "images/services/iluminacao.jpg",
+				"title": "Iluminação LED",
+				"description": "O acabamento do trabalho em gesso e drywall está ligado diretamente a iluminação. Com toda a modernidade chegaram ao mercado nacional as lâmpadas LED, e a Carton não podia ficar de fora desta tendência, por isso disponibiliza diversos modelos, desde modelos de bocal, de embutir, de sobrepor e muitos outros."
 			},
 			{
-				"image": "images/services/suspendisse.jpg",
-				"title": "Suspendisse",
-				"description": "Suspendisse volutpat nibh ut mi lobortis vestibulum. Donec mollis lorem ut velit congue efficitur. Suspendisse sagittis dui vitae semper iaculis. Sed imperdiet placerat arcu, a varius mi fringilla at."
+				"image": "images/services/Gesso-3D-Acartonado.jpg",
+				"title": "Placas de Gesso ( Placas, placas 3D e blocos)",
+				"description": "Temos uma forte linha de Gesso tradicional, que vão desde as plaquinhas, blocos de Gesso e as modernas placas de Gesso 3D. As placas de gesso em 3D compõem uma forma de painel com desenhos (ondulados, retos, ortogonais, floral etc). Além de proporcionar volume – o que traz mais movimento à parede –  deixa o local personalizado e criativo.O efeito é incrível e diferenciado se comparado à outros revestimentos.As placas de gesso em 3D podem ser aplicadas tanto em projetos residenciais quanto comerciais e corporativos. É bem usual vermos em paredes da sala de estar, formando um painel para embutir a TV. Na sala de jantar, este ganha destaque combinado com uma pintura e na composição de móveis. Já nos quartos, estes entram na parede da cabeceira, ganhando um acabamento diferenciado se comparado à madeira. Existem duas formas de aplicação: na própria estrutura montada contra a parede ou direto na própria alvenaria. Por ser de fácil instalação, qualquer profissional da área consegue executar esse trabalho."
+			},
+			{
+				"image": "images/services/acessorios.jpg",
+				"title": "Acessórios",
+				"description": "Diversos acessórios para fixação de placas, blocos e chapas, desde os pequenos materiais de fixação até as mais diversas ferramentas."
 			}
 		],
 		"contact_title": "Entre em contato"
@@ -175,26 +180,20 @@
 			}
 		],
 		"address": {
-			"public_place": "Nome da Sua Rua",
-			"number": "999",
-			"complement": "Complemento",
-			"zip_code": "CEP: 00000-000",
-			"district": "Bairro",
-			"city": "Cidade",
+			"public_place": "Estr. Venceslau José de Medeiros",
+			"number": "???",
+			"district": "Prata",
+			"city": "Teresópolis",
 			"uf": "RJ"
 		},
 		"contacts": [
 			{
 				"icon": "glyphicon glyphicon-phone-alt",
-				"value": "(99)999-9999"
+				"value": "(21) 2743-4214"
 			},
 			{
 				"icon": "glyphicon glyphicon-phone",
-				"value": "(99)9999-9999"
-			},
-			{
-				"icon": "glyphicon glyphicon-envelope",
-				"value": "seu@email.com.br"
+				"value": "(21) 99459-8743"
 			}
 		],
 		"map":{
